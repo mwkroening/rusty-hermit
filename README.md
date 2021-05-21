@@ -33,19 +33,12 @@ Rust applications that use the Rust runtime and do not directly use OS services 
 
 ## Prerequisites
 
-The Rust toolchain can be installed from the [official webpage](https://www.rust-lang.org/).
-RustyHermit currently requires the **nightly versions** of the toolchain.
+[Install Rust](https://www.rust-lang.org/tools/install) using `rustup`.
+
+You also need [`cargo-download`](https://crates.io/crates/cargo-download):
 
 ```sh
-rustup default nightly
-```
-
-Further requirements are the source code of the Rust runtime,  [cargo-download](https://crates.io/crates/cargo-download), and llvm-tools:
-
-```sh
-cargo install cargo-download
-rustup component add rust-src
-rustup component add llvm-tools-preview
+cargo +stable install cargo-download
 ```
 
 ## Building your own applications
